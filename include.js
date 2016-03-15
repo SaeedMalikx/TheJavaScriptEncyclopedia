@@ -57,7 +57,7 @@ function include(callback, text, get_inclusion) {
                     // head is kept in the outer scope so indexOf does not
                     // need to ever rescan material that previously didn't
                     // match.
-    var middle;     // middle will eventually mark the beginning of the key
+    var middle;     // middle will eventually mark the beginning of the key.
     var pair = {    // We allow the key to be wrapped by any of these pairs.
         '"': '"',
         '\'': '\'',
