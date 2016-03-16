@@ -50,7 +50,7 @@
             rand,    // The index of the randomly selected card
             temp;    // Temporary storage for the swap.
 
-        while (card > 1) {
+        while (card_nr > 1) {
             rand = Math.floor(Math.random() * card_nr);
             card_nr -= 1;
             temp = deck[card_nr];
