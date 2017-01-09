@@ -2,14 +2,14 @@
 
 @specimen "name"
 
-    A name is a token that typically resembles a word or a sequence of words. 
+    A name is a token that typically resembles a word or a sequence of words.
     The first character of a name must be one of these:
 
     @list {
         @begin(together)
-            a letter, including the @link(Unicode) general categories 
-            Ll @aka(letter, lowercase), Lm @aka(letter, modifier), 
-            Lo @aka(letter, other), Lt @aka(letter, titlecase), 
+            a letter, including the @link(Unicode) general categories
+            Ll @aka(letter, lowercase), Lm @aka(letter, modifier),
+            Lo @aka(letter, other), Lt @aka(letter, titlecase),
             Lu @aka(letter, uppercase), and Nl @aka(number, letter)
         @end(together)
         the character @link(_)
@@ -19,9 +19,9 @@
     The first character is followed by zero or more additional characters, each of which must be one of these:
 
     @list {    @begin(together)
-            a letter, including the @link(Unicode) general categories 
-            Ll @aka(letter, lowercase), Lm @aka(letter, modifier), 
-            Lo @aka(letter, other), Lt @aka(letter, titlecase), 
+            a letter, including the @link(Unicode) general categories
+            Ll @aka(letter, lowercase), Lm @aka(letter, modifier),
+            Lo @aka(letter, other), Lt @aka(letter, titlecase),
             Lu @aka(letter, uppercase), and Nl @aka(number, letter)
         @end(together)
         the character @link(_)
@@ -55,7 +55,7 @@
         the name of a @link(parameter)
     }
 
-    Any character in a name can be replaced with a Unicode escape sequence without 
+    Any character in a name can be replaced with a Unicode escape sequence without
     changing the meaning, so @t(cat) and @t(\u0063\u0061\u0074) are the same name.
 
     @program <
@@ -64,18 +64,18 @@
     alert(cat['cat'] === 'cat');    // true
     >
 
-    This was intended to make it easier to work with names representing foreign 
-    words, but it has little practical use. It is used mainly by evil doers as a 
-    way of evading security filters. It is generally safest to stick with the 
+    This was intended to make it easier to work with names representing foreign
+    words, but it has little practical use. It is used mainly by evil doers as a
+    way of evading security filters. It is generally safest to stick with the
     @link(ASCII) set.
 
-    Names are case sensitive, so @t(cat) and @t(Cat) and @t(CAT) are three different 
-    names. It is recommended that all names start with a lowercase character, with 
-    the exception that a @link(constructor) function should start with an Uppercase 
+    Names are case sensitive, so @t(cat) and @t(Cat) and @t(CAT) are three different
+    names. It is recommended that all names start with a lowercase character, with
+    the exception that a @link(constructor) function should start with an Uppercase
     Letter, and a @link(global) variable should be all UPPER_CASE.
 
-    A name cannot contain a @link(whitespace) character, but sometimes a name should 
-    incorporate two or more words. There are two conventions for doing this. One is 
+    A name cannot contain a @link(whitespace) character, but sometimes a name should
+    incorporate two or more words. There are two conventions for doing this. One is
     to use @link(_) in place of the @link(whitespace).
 
     @program "truth_or_consequences"
@@ -86,7 +86,7 @@
 
 @specimen "NaN @aka(not a number)"
 
-    There is a special number value called @link(NaN), which stands for Not a Number, 
+    There is a special number value called @link(NaN), which stands for Not a Number,
     despite the fact that
 
     @program (typeof NaN            // 'number')
@@ -109,10 +109,10 @@
     0 * NaN               // NaN
     }
 
-    Generally, any arithmetic operation with @link(NaN) or @link(undefined) as an input 
-    will have @link(NaN) as an output. If a sequence of computations produces @link(NaN), then 
-    there must have been at least one bad input or at least one bad operation. 
-    No clues are provided as to what went wrong. In bitwise operations, 
+    Generally, any arithmetic operation with @link(NaN) or @link(undefined) as an input
+    will have @link(NaN) as an output. If a sequence of computations produces @link(NaN), then
+    there must have been at least one bad input or at least one bad operation.
+    No clues are provided as to what went wrong. In bitwise operations,
     @link(NaN) is treated as 0.
 
     There are many techniques for detecting @link(NaN), but none of them are pleasant. The most likely test,
@@ -123,11 +123,11 @@
 
     @program <x !== x      // true only if x is NaN>
 
-    to test for @link(NaN) because only @link(NaN) is not equal to itself, but it looks 
-    mathematically ridiculous, and one hopes for a better future in which logic 
-    and good engineering are highly valued when this must fail. Another approach 
-    is to use the @link(isNaN primordial function). Unfortunately, it can produce a 
-    @link(false positive) if an operand is a type other than number, so if it is 
+    to test for @link(NaN) because only @link(NaN) is not equal to itself, but it looks
+    mathematically ridiculous, and one hopes for a better future in which logic
+    and good engineering are highly valued when this must fail. Another approach
+    is to use the @link(isNaN primordial function). Unfortunately, it can produce a
+    @link(false positive) if an operand is a type other than number, so if it is
     possible that the operand is a string, then it should be guarded with the @link(typeof prefix operator).
 
     @program [
@@ -144,7 +144,7 @@
 
     @article(@t(NaN) @link(literal))
 
-    The literal symbol for @link(NaN) is @link(NaN). @link(NaN) is not actually a literal. 
+    The literal symbol for @link(NaN) is @link(NaN). @link(NaN) is not actually a literal.
     It is a @link(primordial variable) that holds a @link(NaN) value.
 
     Blah.
@@ -219,11 +219,11 @@
 
 @specimen "number"
 
-    There is a single type for representing number values. It is based on the 64 bit 
+    There is a single type for representing number values. It is based on the 64 bit
     format (double-precision) of the IEEE 754 Standard for Binary Floating-Point Arithmetic.
 
-    The language’s numbers are only an approximation of real numbers, so the 
-    associativity of addition or multiplication should not be assumed, nor should 
+    The language’s numbers are only an approximation of real numbers, so the
+    associativity of addition or multiplication should not be assumed, nor should
     the distributivity of multiplication and addition. For example:
 
     @program <
@@ -266,7 +266,7 @@
 
     All parts are optional., but it is recommended that the whole part always be included. If the exponent part is included, then at least one of the other parts must preceed it. If the whole part is omitted, then the fraction part must be included and must contain at least one digit. The exponent part multiplies the value of the preceding parts by Math.pow(10, exponent). These all represent the same number:
 
-    @program ".01024e4  1.024e+3  10.24E2  102.4E+1  1024.e0  1024.00  1024  10240e-1"
+    @program "0.1024e4  1.024e+3  10.24E2  102.4E+1  1024.e0  1024.00  1024  10240e-1"
 
     A hexadecimal number literal is a token containing two required parts.
 
@@ -306,7 +306,7 @@
     @link(POSITIVE_INFINITY Number number)
     }
 
-    Only Number.MAX_VALUE and Number.MIN_VALUE are useful. The other three are redundant. 
+    Only Number.MAX_VALUE and Number.MIN_VALUE are useful. The other three are redundant.
 
 @specimen(NumberFormat)
 
