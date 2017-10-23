@@ -252,7 +252,7 @@
 
     @article "@t(buffer) @link(dataview prototype arraybuffer)"
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "byte @aka(octet)"
 
@@ -266,7 +266,7 @@
 
     @article "@t(byteLength) @link(dataview prototype number)"
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "byteOffset"
 

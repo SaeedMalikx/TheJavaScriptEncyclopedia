@@ -333,7 +333,7 @@
 
 @specimen "ArrayBuffer"
 
-    @es5(Blah.)
+    (Blah.)
 
     @article "@t(ArrayBuffer) @link(function)"
 

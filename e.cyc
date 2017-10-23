@@ -6,7 +6,9 @@
 
     @article "@t(E) @link(Math number) @aka(e)"
 
-    Math.E contains an approximate value of e which is somewhere around 2.718281828459045. It is called Euler's number, and is the base of the natural logarithm.
+    Math.E contains an approximate value of e which is somewhere around
+    2.718281828459045. It is called Euler's number, and is the base of the
+    natural logarithm.
 
     It can be computed with an immediate function:
 
@@ -27,13 +29,18 @@
 
 @specimen "E4X"
 
-    The ECMAScript for XML (E4X) Specification [ECMA-357 Second Edition / December 2005] is a standard that extends ECMAScript with XML literals and XPath-like operators. It is not a part of ES3 or ES5. It is not implemented in most systems. The E4X extentions should be avoided because of their lack of general availability and acceptance.
+    The ECMAScript for XML (E4X) Specification [ECMA-357 Second Edition /
+    December 2005 is a standard that extends ECMAScript with XML literals and
+    XPath-like operators. It is not a part of ES3 or ES5. It is not implemented
+    in most systems. The E4X extentions should be avoided because of their lack
+    of general availability and acceptance.
 
 @specimen "Ecma International"
 
     Ecma International (fna European Computer Manufacturers Association) is the
     standards body that is responsible for the ECMAScript Programming Language
-    Standard. It was founded in 1961 and is based in Geneva. See @url(http://www.ecma-international.org/).
+    Standard. It was founded in 1961 and is based in Geneva. See
+    @url(http://www.ecma-international.org/).
 
 @specimen "ECMAScript"
 
@@ -73,7 +80,7 @@
 
     @article(@t(endsWith) @link(String prototype function))
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "entity"
 
@@ -214,7 +221,7 @@
 
     @article(@t(exp) @link(Math function) @aka(exponential))
 
-    The Math.exp(number) function returns e raised to the number power. This is an approximate implementation:
+    The Math.exp(number) function returns @link[E Math number] raised to the number power. This is an approximate implementation:
 
     @begin(program)
     Math.exp = function exp(number) {

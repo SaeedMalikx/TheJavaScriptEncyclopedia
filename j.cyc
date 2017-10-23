@@ -41,8 +41,8 @@
     @article (@t "JSON" @link (primordial object))
 
     @list{
-    @link(parse JSON function)
-    @link(stringify JSON function)
+        @link(parse JSON function)
+        @link(stringify JSON function)
     }
 
     Blah.

@@ -35,27 +35,24 @@
 
         @article "@t(set) @link(primordial function)"
 
-            @es5<
             @list {
                 @link(name set string)
-            }>
+            }
 
         @article "@t(set) @link(prototype)"
 
         @article "@t(set) @link(prototype function)"
 
-            @es5<
-                @list {
-                    @link(add set prototoype function)
-                    @link(clear set prototoype function)
-                    @link(delete set prototoype function)
-                    @link(entries set prototoype function)
-                    @link(forEach set prototoype function)
-                    @link(has set prototoype function)
-                    @link(keys set prototoype function)
-                    @link(values set prototoype function)
-                }
-            >
+            @list {
+                @link(add set prototoype function)
+                @link(clear set prototoype function)
+                @link(delete set prototoype function)
+                @link(entries set prototoype function)
+                @link(forEach set prototoype function)
+                @link(has set prototoype function)
+                @link(keys set prototoype function)
+                @link(values set prototoype function)
+            }
 
     @specimen "setDate"
 
@@ -67,13 +64,13 @@
 
     @article(@t(setFloat32) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setFloat64"
 
     @article(@t(setFloat64) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setFullYear"
 
@@ -91,19 +88,19 @@
 
     @article(@t(setInt16) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setInt32"
 
     @article(@t(setInt32) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setInt8"
 
     @article(@t(setInt8) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setMilliseconds"
 
@@ -139,19 +136,19 @@
 
     @article(@t(setUInt16) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setUInt32"
 
     @article(@t(setUInt32) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setUInt8"
 
     @article(@t(setUInt8) @link(dataview prototype function))
 
-    @es5<Blah.>
+    <Blah.>
 
 @specimen "setUTCDate"
 

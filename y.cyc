@@ -4,7 +4,7 @@
 
     @article "@t(y) @link 'regexp flag'"
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "y combinator"
 
@@ -36,6 +36,4 @@ var number120 = factorial(5);
 
     @article "yield @link(operator)"
 
-    @begin(es5)
     Blah. See @link <function *>.
-    @end(es5)

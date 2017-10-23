@@ -264,7 +264,7 @@
 
 @specimen "typed array"
 
-    @es5{Blah.}
+    {Blah.}
 
 @specimen "typeof @reserved@"
 

@@ -443,11 +443,11 @@ Blah. Dot dot dot.
 
 @section "rest"
 
-@es5(Blah. @link(parameter list))
+(Blah. @link(parameter list))
 
 @section "spread"
 
-@es5(Blah. @link(argument list) @link(array literal))
+(Blah. @link(argument list) @link(array literal))
 
 @specimen (@t(/) @aka(slash))
 

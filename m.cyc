@@ -32,28 +32,25 @@
 
         @article "@t(Map) @link(primordial function)"
 
-            @es5<
             @list {
                 @link(name Int8ClampedArray string)
-            }>
+            }
 
         @article "@t(Map) @link(prototype)"
 
         @article "@t(Map) @link(prototype function)"
-        
-            @es5<
-                @list {
-                    @link(clear map prototoype function)
-                    @link(delete map prototoype function)
-                    @link(entries map prototoype function)
-                    @link(forEach map prototoype function)
-                    @link(get map prototoype function)
-                    @link(has map prototoype function)
-                    @link(keys map prototoype function)
-                    @link(set map prototoype function)
-                    @link(values map prototoype function)
-                }
-            >
+
+            @list {
+                @link(clear map prototoype function)
+                @link(delete map prototoype function)
+                @link(entries map prototoype function)
+                @link(forEach map prototoype function)
+                @link(get map prototoype function)
+                @link(has map prototoype function)
+                @link(keys map prototoype function)
+                @link(set map prototoype function)
+                @link(values map prototoype function)
+            }
 
 @specimen "match"
 

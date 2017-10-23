@@ -180,7 +180,7 @@
 
     @article "@t(codePointAt) @link(string prototype function)"
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen(Collator)
 

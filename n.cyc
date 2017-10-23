@@ -201,7 +201,7 @@
 
     @article(@t(normalize) @link(String prototype function))
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "now"
 

@@ -27,7 +27,6 @@ overview.html       An overview of the language
 regexp.html         The appendix on regular expressions
 browser.html        The appendix on web browsers
 css.html            The appendix on Cascading Style Sheets
-es5.png             The ES5 flag
 cyc.js              A simple Cyc processor
 include.js          A simple @include preprocessor
 include.c           A simple @include preprocessor in C
@@ -36,6 +35,6 @@ make_book.js        Make a book as a single HTML file
 
 It also makes use of RQ: https://github.com/douglascrockford/RQ
 
-You can make a single page encyclopedia with
+You can make a single file encyclopedia with
 
     node make_book

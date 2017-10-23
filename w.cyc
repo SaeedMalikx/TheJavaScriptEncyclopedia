@@ -18,36 +18,31 @@
 
     @article "@t(WeakMap) @link(prototype function)"
 
-        @es5<
-            @list {
-                @link(delete WeakMap prototoype function)
-                @link(get WeakMap prototoype function)
-                @link(has WeakMap prototoype function)
-                @link(set WeakMap prototoype function)
-            }
-        >
+        @list {
+            @link(delete WeakMap prototoype function)
+            @link(get WeakMap prototoype function)
+            @link(has WeakMap prototoype function)
+            @link(set WeakMap prototoype function)
+        }
 
 @specimen "WeakSet"
 
     @article "@t(WeakSet) @link(primordial function)"
 
-        @es5<
         @list {
             @link(name Int8ClampedArray string)
-        }>
+        }
 
     @article "@t(WeakSet) @link(prototype)"
 
     @article "@t(WeakSet) @link(prototype function)"
 
-        @es5<
-            @list {
-                @link(add WeakSet prototoype function)
-                @link(delete WeakSet prototoype function)
-                @link(get WeakSet prototoype function)
-                @link(has WeakSet prototoype function)
-            }
-        >
+        @list {
+            @link(add WeakSet prototoype function)
+            @link(delete WeakSet prototoype function)
+            @link(get WeakSet prototoype function)
+            @link(has WeakSet prototoype function)
+        }
 
 @specimen "while @reserved@"
 

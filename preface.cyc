@@ -46,7 +46,6 @@ content. The environments are
 @t(@@article)
 @t(@@section)
 @t(@@program)
-@t(@@es5)
 @t(@@table)
 @t(@@list)
 @t(@@together)
@@ -67,12 +66,6 @@ sections.
 Paragraphs are indicated with a blank line.
 
 A program is a JavaScript program that is illustrating or implementing a concept.
-
-@es5<Some paragraphs will be marked with an @link(ES5) flag, indicating a new
-feature that is not available with, or somehow incompatible with language
-processors that implement @link(es6). With each new edition, we should remove
-all of the old flags, and then add new flags to highlight the latest
-incompatibilities.>
 
 A table is a two dimensional grid structure. @t(@@|) and @t(@@_) are used to
 separate the cells and rows. @t(@@!) is used inside of a cell to indicate a header cell.

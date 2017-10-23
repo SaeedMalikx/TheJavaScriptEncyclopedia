@@ -10,7 +10,12 @@
 
 @specimen "quotation marks"
 
-    See @link <'> and @link <"> and @link <string literal>.
+    See @list {
+        @link <'>
+        @link <">
+        @link <`>
+        @link <string literal>
+    }
 
 @specimen "quotient"
 

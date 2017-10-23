@@ -2,23 +2,23 @@
 
 @specimen "object"
 
-An object (or @link(native object)) is an unordered container of properties. 
-Each @link(property) has a key, which is a @link(string). 
-Keys are unique within an object. A @link(property) can have any value of any 
+An object (or @link(native object)) is an unordered container of properties.
+Each @link(property) has a key, which is a @link(string).
+Keys are unique within an object. A @link(property) can have any value of any
 type. Properties are normally accessed with the @link(. suffix operator) and @link([ ] suffix operator).
 
-The object is the fundamental data structure. The object is the base type for 
-@link(array), @link(date), @link(function), and @link(regexp). 
-Objects are used as containers for clustering collections of data and 
-functions into convenient units. When a function is stored in an object, it is 
-called a @link(method). Methods can provide functionality and protect the 
-integrity of their objects. Objects are used as records or collections of data, 
+The object is the fundamental data structure. The object is the base type for
+@link(array), @link(date), @link(function), and @link(regexp).
+Objects are used as containers for clustering collections of data and
+functions into convenient units. When a function is stored in an object, it is
+called a @link(method). Methods can provide functionality and protect the
+integrity of their objects. Objects are used as records or collections of data,
 and can be nested to form more complicated data structures.
 
-A reference to an object may be stored in a variable, stored in an object as a 
-property, passed as as an argument to a function, and returned as a return value 
-from a function. None of these operations make a copy of an object. 
-Objects are always passed by reference. The @link(=== infix operator) will 
+A reference to an object may be stored in a variable, stored in an object as a
+property, passed as as an argument to a function, and returned as a return value
+from a function. None of these operations make a copy of an object.
+Objects are always passed by reference. The @link(=== infix operator) will
 produce @link(true) when both of its operands are references to the same object.
 
 @program <
@@ -33,21 +33,21 @@ alert(b.booga);    // false
 
 An object can be made with the @link(create Object function).
 
-The @link(typeof prefix operator) returns @t('object') when its operand is an 
-object, but the @link(typeof prefix operator) also returns @t('object') 
+The @link(typeof prefix operator) returns @t('object') when its operand is an
+object, but the @link(typeof prefix operator) also returns @t('object')
 when its operand is an @link(array) or @link(null).
 
-Objects are extensible by default, meaning that new properties can be added at 
+Objects are extensible by default, meaning that new properties can be added at
 any time. New properties can be added with an @link(assignment operator).
 
 @program "a.wooga = true;    // a now has a wooga property"
 
 Extensibility can be turned off for an object by the @link(preventExtensions Object function).
 
-Objects can be used as associative arrays or hash collections, with 
-two limitations. First, the keys of an object must be strings. 
-If any other value is used as a key, it is converted into a string first. 
-The second limitation is more serious. In addition to an object's own properties, 
+Objects can be used as associative arrays or hash collections, with
+two limitations. First, the keys of an object must be strings.
+If any other value is used as a key, it is converted into a string first.
+The second limitation is more serious. In addition to an object's own properties,
 an object may have inherited properties. This can cause confusion for some applications.
 
 @program <
@@ -66,8 +66,8 @@ alert(has_a(word, 'dog'));            // false
 alert(has_a(word, 'constructor'));    // true (inherted)
 >
 
-It is regrettably necessary to program defensively in the face of this by 
-looking for specific values or types, or by using the 
+It is regrettably necessary to program defensively in the face of this by
+looking for specific values or types, or by using the
 @link(hasOwnProperty Object prototype function). For example,
 
 @begin(program)
@@ -233,10 +233,10 @@ function get(object, key) {    // object[key]
     do {
         property_descriptor = Object.getOwnPropertyDescriptor(prototype, key);
         if (property_descriptor) {
-            return (property_descriptor.get) 
-                ? property_descriptor.get.call(object) 
+            return (property_descriptor.get)
+                ? property_descriptor.get.call(object)
                 : (property_descriptor.set)
-                    ? undefined 
+                    ? undefined
                     : property_descriptor.value;
         }
         prototype = Object.getPrototypeOf(prototype);
@@ -259,9 +259,9 @@ If neither the object nor its delegate(s) can produce a value for the key, then 
 
 @section "Set"
 
-The set operation is done by the @link(. suffix operator) or 
-@link([ ] suffix operator) when the operand is an object and when the 
-expression is an @link(lvalue) (the target of an assignment). 
+The set operation is done by the @link(. suffix operator) or
+@link([ ] suffix operator) when the operand is an object and when the
+expression is an @link(lvalue) (the target of an assignment).
 This is how the set operation could be implemented:
 
 @begin(program)
@@ -464,6 +464,10 @@ See @link(number literal), @link(parseInt primordial function), and @link(toStri
 @article(@t(of) @link(array function))
 
 Blah.
+
+@article(OOP)
+
+See @link(Object Oriented Programming)
 
 @specimen "operand"
 

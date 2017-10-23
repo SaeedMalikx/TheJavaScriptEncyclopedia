@@ -8,11 +8,11 @@
 
     @article "@t(DataView) @link(primordial function)"
 
-    @es5 <Blah. Blah. Blah.>
+    Blah. Blah. Blah.
 
     @article "@t(DataView) @link(prototype)"
 
-    @es5 <Blah. Blah. Blah.
+    Blah. Blah. Blah.
 
     @list {
     @link (DataView prototype arraybuffer)
@@ -20,41 +20,40 @@
     @link (DataView prototype number)
     }>
 
-    @es5 <>
 
     @article "@link(DataView prototype) @link(arraybuffer)"
 
-    @es5 <@list {
-    @link (buffer DataView prototype arraybuffer)
-    }>
+    @list {
+        @link (buffer DataView prototype arraybuffer)
+    }
 
     @article "@link(DataView prototype) @link(function)"
 
-    @es5 <@list {
-    @link (getFloat32 DataView prototype function)
-    @link (getFloat64 DataView prototype function)
-    @link (getInt16 DataView prototype function)
-    @link (getInt32 DataView prototype function)
-    @link (getInt8 DataView prototype function)
-    @link (getUInt16 DataView prototype function)
-    @link (getUInt32 DataView prototype function)
-    @link (getUInt8 DataView prototype function)
-    @link (setFloat32 DataView prototype function)
-    @link (setFloat64 DataView prototype function)
-    @link (setInt16 DataView prototype function)
-    @link (setInt32 DataView prototype function)
-    @link (setInt8 DataView prototype function)
-    @link (setUInt16 DataView prototype function)
-    @link (setUInt32 DataView prototype function)
-    @link (setUInt8 DataView prototype function)
-    }>
+    @list {
+        @link (getFloat32 DataView prototype function)
+        @link (getFloat64 DataView prototype function)
+        @link (getInt16 DataView prototype function)
+        @link (getInt32 DataView prototype function)
+        @link (getInt8 DataView prototype function)
+        @link (getUInt16 DataView prototype function)
+        @link (getUInt32 DataView prototype function)
+        @link (getUInt8 DataView prototype function)
+        @link (setFloat32 DataView prototype function)
+        @link (setFloat64 DataView prototype function)
+        @link (setInt16 DataView prototype function)
+        @link (setInt32 DataView prototype function)
+        @link (setInt8 DataView prototype function)
+        @link (setUInt16 DataView prototype function)
+        @link (setUInt32 DataView prototype function)
+        @link (setUInt8 DataView prototype function)
+    }
 
     @article "@link(DataView prototype) @link(number)"
 
-    @es5 <@list {
-    @link (byteLength DataView prototype number)
-    @link (byteOffset DataView prototype number)
-    }>
+    @list {
+        @link (byteLength DataView prototype number)
+        @link (byteOffset DataView prototype number)
+    }
 
 @specimen "date"
 
@@ -180,3 +179,7 @@
     Example:
 
     @program{__pathetic__}
+
+@specimen "dunderhead"
+
+    A ponderously stupid person. See @link(dunder).

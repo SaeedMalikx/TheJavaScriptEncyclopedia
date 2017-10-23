@@ -42,24 +42,24 @@
     // units, tens, and illions.
 
         var units = [
-                '', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
-                'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen',
-                'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen',
-                'nineteen'
+                "", "one", "two", "three", "four", "five", "six", "seven",
+                "eight", "nine", "ten", "eleven", "twelve", "thirteen",
+                "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+                "nineteen"
             ],
             tens = [
-                '', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty',
-                'seventy', 'eighty', 'ninety'
+                "", "ten", "twenty", "thirty", "forty", "fifty", "sixty",
+                "seventy", "eighty", "ninety"
             ],
             illions = [
-                '', 'thousand', 'million', 'billion', 'trillion', 'quadrillion'
+                "", "thousand", "million", "billion", "trillion", "quadrillion"
             ];
 
     // The result of the execution of the immediate function is the wordify
     // function.
 
         return function (n) {
-            var result = '', i, clump, hundred, ten, unit, word, illion;
+            var result = "", i, clump, hundred, ten, unit, word, illion;
 
     // Force the input to be a non-negative integer.
 
@@ -85,15 +85,15 @@
 
     // The units array contains 20 rather than 100 entries. If an entry is
     // undefined, then split the unit into two parts. For example, unit[21] is
-    // undefined, so we will combine tens[2] and unit[1] to make 'twenty one'.
+    // undefined, so we will combine tens[2] and unit[1] to make "twenty one".
 
                     word = units[unit];
-                    if (typeof word !== 'string') {
+                    if (typeof word !== "string") {
                         ten = Math.floor(unit / 10);
                         unit = unit % 10;
                         word = units[unit];
                         if (word) {
-                            word = ' ' + word;
+                            word = " " + word;
                         }
                         word = tens[ten] + word;
                     }
@@ -102,7 +102,7 @@
 
                     if (hundred) {
                         if (word) {
-                            word = ' ' + word;
+                            word = " " + word;
                         }
                         word = units[hundred] + ' hundred' + word;
                     }
@@ -110,10 +110,10 @@
     // Add the current illion's contributions to the result.
 
                     if (result) {
-                        result = ' ' + result;
+                        result = " " + result;
                     }
                     if (illion) {
-                        word += ' ' + illion;
+                        word += " " + illion;
                     }
                     result = word + result;
                 }
@@ -177,7 +177,7 @@
 
     @article(@t(includes) @link(String prototype function))
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "indexOf"
 
@@ -438,49 +438,43 @@
 
         @article "@t(Int16Array) @link(primordial function)"
 
-            @es5<
             @list {
                 @t<new Int16Array(>length@t<);>
                 @t<new Int16Array(>typedArray@t<);>
                 @t<new Int16Array(>object@t<);>
                 @t<new Int16Array(>buffer@t<,> byteOffset@t<,> length@t<);>
-            }>
+            }
 
         @article "@t(Int16Array) @link(function)"
 
-            @es5<
             @list {
                 @link(from Int16Array function)
                 @link(of Int16Array function)
-            }>
+            }
 
         @article "@t(Int16Array) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int16Array number)
                 @link(length Int16Array number)
-            }>
+            }
 
         @article "@t(Int16Array) @link(prototype)"
 
-            @es5<
             @list {
                 @link(name Int16Array prototype arraybuffer)
                 @link(name Int16Array prototype function)
                 @link(name Int16Array prototype number)
-            }>
+            }
 
         @article "@link(Int16Array prototype) @link(arraybuffer)"
 
-            @es5<
             @list {
                 @link(buffer Int16Array prototype arraybuffer)
-            }>
+            }
 
         @article "@link(Int16Array prototype) @link(function)"
 
-            @es5<
             @list {
                 @link(copyWithin Int16Array prototype function)
                 @link(entries Int16Array prototype function)
@@ -504,79 +498,70 @@
                 @link(values Int16Array prototype function)
                 @link(toLocaleString Int16Array prototype function)
                 @link(toString Int16Array prototype function)
-            }>
+            }
 
         @article "@link(Int16Array prototype) @link(number)"
 
-            @es5<
             @list {
                 @link(byteLength Int16Array prototype number)
                 @link(byteOffset Int16Array prototype number)
                 @link(length Int16Array prototype number)
-            }>
+            }
 
         @article "@t(Int16Array) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int16Array number)
                 @link(length Int16Array number)
-            }>
+            }
 
         @article "@t(Int16Array) @link(string)"
 
-            @es5<
             @list {
                 @link(name Int16Array string)
-            }>
+            }
 
 @specimen "Int32Array"
 
         @article "@t(Int32Array) @link(primordial function)"
 
-            @es5<
             @list {
                 @t<new Int32Array(>length@t<);>
                 @t<new Int32Array(>typedArray@t<);>
                 @t<new Int32Array(>object@t<);>
                 @t<new Int32Array(>buffer@t<,> byteOffset@t<,> length@t<);>
-            }>
+            }
 
         @article "@t(Int32Array) @link(function)"
 
-            @es5<
             @list {
                 @link(from Int32Array function)
                 @link(of Int32Array function)
-            }>
+            }
 
         @article "@t(Int32Array) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int32Array number)
                 @link(length Int32Array number)
-            }>
+            }
 
         @article "@t(Int32Array) @link(prototype)"
 
-            @es5<
             @list {
                 @link(name Int32Array prototype arraybuffer)
                 @link(name Int32Array prototype function)
                 @link(name Int32Array prototype number)
-            }>
+            }
 
         @article "@link(Int32Array prototype) @link(arraybuffer)"
 
-            @es5<
             @list {
                 @link(buffer Int32Array prototype arraybuffer)
-            }>
+            }
 
         @article "@link(Int32Array prototype) @link(function)"
 
-            @es5<
             @list {
                 @link(copyWithin Int32Array prototype function)
                 @link(entries Int32Array prototype function)
@@ -600,79 +585,70 @@
                 @link(values Int32Array prototype function)
                 @link(toLocaleString Int32Array prototype function)
                 @link(toString Int32Array prototype function)
-            }>
+            }
 
         @article "@link(Int32Array prototype) @link(number)"
 
-            @es5<
             @list {
                 @link(byteLength Int32Array prototype number)
                 @link(byteOffset Int32Array prototype number)
                 @link(length Int32Array prototype number)
-            }>
+            }
 
         @article "@t(Int32Array) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int32Array number)
                 @link(length Int32Array number)
-            }>
+            }
 
         @article "@t(Int32Array) @link(string)"
 
-            @es5<
             @list {
                 @link(name Int32Array string)
-            }>
+            }
 
 @specimen "Int8Array"
 
         @article "@t(Int8Array) @link(primordial function)"
 
-            @es5<
             @list {
                 @t<new Int8Array(>length@t<);>
                 @t<new Int8Array(>typedArray@t<);>
                 @t<new Int8Array(>object@t<);>
                 @t<new Int8Array(>buffer@t<,> byteOffset@t<,> length@t<);>
-            }>
+            }
 
         @article "@t(Int8Array) @link(function)"
 
-            @es5<
             @list {
                 @link(from Int8Array function)
                 @link(of Int8Array function)
-            }>
+            }
 
         @article "@t(Int8Array) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int8Array number)
                 @link(length Int8Array number)
-            }>
+            }
 
         @article "@t(Int8Array) @link(prototype)"
 
-            @es5<
             @list {
                 @link(name Int8Array prototype arraybuffer)
                 @link(name Int8Array prototype function)
                 @link(name Int8Array prototype number)
-            }>
+            }
 
         @article "@link(Int8Array prototype) @link(arraybuffer)"
 
-            @es5<
             @list {
                 @link(buffer Int8Array prototype arraybuffer)
-            }>
+            }
 
         @article "@link(Int8Array prototype) @link(function)"
 
-            @es5<
             @list {
                 @link(copyWithin Int8Array prototype function)
                 @link(entries Int8Array prototype function)
@@ -696,79 +672,70 @@
                 @link(values Int8Array prototype function)
                 @link(toLocaleString Int8Array prototype function)
                 @link(toString Int8Array prototype function)
-            }>
+            }
 
         @article "@link(Int8Array prototype) @link(number)"
 
-            @es5<
             @list {
                 @link(byteLength Int8Array prototype number)
                 @link(byteOffset Int8Array prototype number)
                 @link(length Int8Array prototype number)
-            }>
+            }
 
         @article "@t(Int8Array) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int8Array number)
                 @link(length Int8Array number)
-            }>
+            }
 
         @article "@t(Int8Array) @link(string)"
 
-            @es5<
             @list {
                 @link(name Int8Array string)
-            }>
+            }
 
 @specimen "Int8ClampedArray"
 
         @article "@t(Int8ClampedArray) @link(primordial function)"
 
-            @es5<
             @list {
                 @t<new Int8ClampedArray(>length@t<);>
                 @t<new Int8ClampedArray(>typedArray@t<);>
                 @t<new Int8ClampedArray(>object@t<);>
                 @t<new Int8ClampedArray(>buffer@t<,> byteOffset@t<,> length@t<);>
-            }>
+            }
 
         @article "@t(Int8ClampedArray) @link(function)"
 
-            @es5<
             @list {
                 @link(from Int8ClampedArray function)
                 @link(of Int8ClampedArray function)
-            }>
+            }
 
         @article "@t(Int8ClampedArray) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int8ClampedArray number)
                 @link(length Int8ClampedArray number)
-            }>
+            }
 
         @article "@t(Int8ClampedArray) @link(prototype)"
 
-            @es5<
             @list {
                 @link(name Int8ClampedArray prototype arraybuffer)
                 @link(name Int8ClampedArray prototype function)
                 @link(name Int8ClampedArray prototype number)
-            }>
+            }
 
         @article "@link(Int8ClampedArray prototype) @link(arraybuffer)"
 
-            @es5<
             @list {
                 @link(buffer Int8ClampedArray prototype arraybuffer)
-            }>
+            }
 
         @article "@link(Int8ClampedArray prototype) @link(function)"
 
-            @es5<
             @list {
                 @link(copyWithin Int8ClampedArray prototype function)
                 @link(entries Int8ClampedArray prototype function)
@@ -792,31 +759,28 @@
                 @link(values Int8ClampedArray prototype function)
                 @link(toLocaleString Int8ClampedArray prototype function)
                 @link(toString Int8ClampedArray prototype function)
-            }>
+            }
 
         @article "@link(Int8ClampedArray prototype) @link(number)"
 
-            @es5<
             @list {
                 @link(byteLength Int8ClampedArray prototype number)
                 @link(byteOffset Int8ClampedArray prototype number)
                 @link(length Int8ClampedArray prototype number)
-            }>
+            }
 
         @article "@t(Int8ClampedArray) @link(number)"
 
-            @es5<
             @list {
                 @link(BYTES_PER_ELEMENT Int8ClampedArray number)
                 @link(length Int8ClampedArray number)
-            }>
+            }
 
         @article "@t(Int8ClampedArray) @link(string)"
 
-            @es5<
             @list {
                 @link(name Int8ClampedArray string)
-            }>
+            }
 
 @specimen "integer"
 

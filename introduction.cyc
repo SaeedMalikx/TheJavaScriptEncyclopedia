@@ -1,33 +1,22 @@
 @chapter "Introduction"
 
-The language described in this book is @link "es6". 
-The standard, which is designated as ECMA-262, may be found at 
-@url<http://www.ecma-international.org/publications/standards/ECMA-262.HTM>. 
+The language described in this book is @link "es6".
+The standard, which is designated as ECMA-262, may be found at
+@url<http://www.ecma-international.org/publications/standards/ECMA-262.HTM>.
 
-Because of trademark problems, the standard for the @link(JavaScript) language 
+Because of trademark problems, the standard for the @link(JavaScript) language
 is called @link(ECMAScript). JavaScript is a trademark of Oracle Corporation.
-
-@es5[Paragraphs marked with the @link(es5) icon in the left margin indicate 
-concerns for users of The Fifth Edition. @link(es6), The Sixth Edition, significantly 
-enlarged the language, creating hazards for users of @link(es5). 
-Programmers who must honor compatibility commitments should pay close attention to the @link(ES5) warnings.]
-
-@link(ES5) describes two dialects, the @link(strict mode) dialect 
-and the @link(sloppy mode) dialect. Stick with the @link(strict mode) dialect.
-
-The @link(use strict) pragma is written as a @link(string literal) so that it will not cause 
-a syntax error when processed by an @link(ES3) system.
 
 @program <"use strict";>
 
-Most of the material in this encyclopedia is organized into 27 chapters 
-(one for each letter and the @link "Special Characters"). Each chapter lists several 
-specimens, where a specimen is an element of syntax or a concept. The specimens 
-are ordered alphabetically. A specimen marked with @reserved@ indicates that 
-the word is reserved and cannot be used as a parameter or variable name. 
+Most of the material in this encyclopedia is organized into 27 chapters
+(one for each letter and the @link "Special Characters"). Each chapter lists several
+specimens, where a specimen is an element of syntax or a concept. The specimens
+are ordered alphabetically. A specimen marked with @reserved@ indicates that
+the word is reserved and cannot be used as a parameter or variable name.
 The special characters chapter is sorted according to the @link(ASCII) sequence.
 
-Under each specimen there will be one or more articles that explain, expand, 
+Under each specimen there will be one or more articles that explain, expand,
 or are related to the specimen. An article may be composed of one or more sections.
 
 The title of an article may contain one or more classifiers, such as
@@ -47,10 +36,10 @@ The title of an article may contain one or more classifiers, such as
 @link(ternary operator)
 }
 
-The article of a title may contain a comment. It is used in cases where the 
+The article of a title may contain a comment. It is used in cases where the
 subject is an abbrievation or special character such as @link(;).
 
-Many articles will have examples. Expression examples will be written with a 
+Many articles will have examples. Expression examples will be written with a
 comment showing the result.
 
 @program <
@@ -58,9 +47,9 @@ comment showing the result.
 3 + '4'    // "34"
 >
 
-Chapter 16 of the ECMAScript standard gives implementors of ECMAScript 
-processors some license to extend the language with experimental or 
-proprietary features. Such features might be incorporated into a future 
-edition or might be abandoned. It is unwise to rely on such features because 
-of the likelihood of diminished reliability. Such non-standard features will 
+Chapter 16 of the ECMAScript standard gives implementors of ECMAScript
+processors some license to extend the language with experimental or
+proprietary features. Such features might be incorporated into a future
+edition or might be abandoned. It is unwise to rely on such features because
+of the likelihood of diminished reliability. Such non-standard features will
 not be included in this encyclopedia.

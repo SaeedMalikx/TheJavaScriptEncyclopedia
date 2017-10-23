@@ -16,11 +16,11 @@
 */
 
 function make_onehtml() {
-    'use strict';
+    "use strict";
     var link_text = Object.create(null);
     var nx = /\n|\r\n?/;
     var sx = /[!-@\[-\^`{-~]/g;     // special characters & digits
-    var title = '';
+    var title = "";
 
 
     function entityify(text) {
@@ -37,7 +37,7 @@ function make_onehtml() {
 // with pairs of hex digits. This makes special character sequences safe for
 // use as filenames and urls. Alpha hex characters will be upper case.
 
-        if (typeof text === 'string') {
+        if (typeof text === "string") {
             return text.toLowerCase().replace(sx, function (a) {
                 return a.charCodeAt(0).toString(16).toUpperCase();
             });
@@ -58,30 +58,36 @@ function make_onehtml() {
 
     function wrap(tag) {
         return function (text, structure) {
-            return '\n<' + tag + ' id="' + special_encode(structure.link) +
-                    '">' + text + '</' + tag + '>';
+            return "\n<" + tag + " id='" + special_encode(structure.link)
+                    + "'>" + text + "</" + tag + ">";
         };
     }
 
     return {
-        '*': ['link', 'name', 'gen'],   // the names of the passes
-        '@': function (product) {
-            return '<!DOCTYPE html><html><head><meta charset="utf-8">' +
-                    '<link rel="stylesheet" href="encyclopedia.css" type="text/css">' +
-                    '<title>' + entityify(title) + '</title>' +
-                    '</head><body>' + product.gen + '</body></html>';
+        "*": ["link", "name", "gen"],   // the names of the passes
+        "@": function (product) {
+            return "<!DOCTYPE html><html><head><meta charset='utf-8'>"
+                    + "<link rel='stylesheet' href='encyclopedia.css' "
+                    + "type='text/css'>"
+                    + "<title>" + entityify(title) + "</title>"
+                    + "</head><body>" + product.gen + "</body></html>";
+        },
+        "@-": {                         // soft hyphen
+            link: "",
+            name: "",
+            gen: "&shy;"
         },
         $: {                            // the naked text rule
             name: entityify,
             gen: entityify
         },
-        '': {                           // the default para rule
-            link: '',
-            name: '',
+        "": {                           // the default para rule
+            link: "",
+            name: "",
             gen: ["\n<p>", "</p>"]
         },
         aka: {
-            link: '',
+            link: "",
             name: ["<dfn>", "</dfn>"],
             gen: ["<dfn>", "</dfn>"]
         },
@@ -114,14 +120,9 @@ function make_onehtml() {
             gen: wrap("h1")
         },
         comment: {
-            link: '',
-            name: '',
-            gen: ''
-        },
-        es5: {
-            link: '',
-            name: '',
-            gen: ["\n<div class=es5>", "</div>"]
+            link: "",
+            name: "",
+            gen: ""
         },
         i: {
             gen: ["<i>", "</i>"]
@@ -131,42 +132,44 @@ function make_onehtml() {
             gen: function (ignore, structure) {
                 var name = link_text[structure.link.toLowerCase()];
                 if (name !== undefined) {
-                    return "<a href=\"#" + special_encode(structure.link) +
-                            "\">" + name + "</a>";
+                    return "<a href='#"
+                            + special_encode(structure.link)
+                            + "'>" + name + "</a>";
                 } else {
                     return structure.link + " <strong>MISSING LINK</strong>";
                 }
             }
         },
         list: {
-            name: '',
-            link: '',
+            name: "",
+            link: "",
             gen: function (text) {
-                return '<ul><li>' + text.split(nx).join('</li><li>') + '</li></ul>';
+                return "<ul><li>" + text.split(nx).join("</li><li>")
+                        + "</li></ul>";
             }
         },
         program: {
-            name: '',
-            link: '',
+            name: "",
+            link: "",
             gen: ["\n<pre>", "</pre>"]
         },
         reserved: {
-            name: '',
-            link: '',
-            gen: "<a href=\"#reserved word\"><strong>reserved word</strong></a>"
+            name: "",
+            link: "",
+            gen: "<a href='#reserved word'><strong>reserved word</strong></a>"
         },
         section: {
             level: 5,
-            link: '',
-            name: '',
+            link: "",
+            name: "",
             gen: wrap("h4")
         },
         slink: {
             gen: function (text, structure) {
                 var name = link_text[structure.link.toLowerCase()];
                 if (name !== undefined) {
-                    return "<a href=\"#" + special_encode(structure.link) +
-                            "\">" + name + "</a>";
+                    return "<a href='#" + special_encode(structure.link)
+                            + "'>" + name + "</a>";
                 } else {
                     return text + " <strong>MISSING LINK</strong>";
                 }
@@ -191,33 +194,33 @@ function make_onehtml() {
             gen: ["<tt>", "</tt>"]
         },
         table: {
-            link: '',
-            name: '',
+            link: "",
+            name: "",
             gen: ["<table><tbody>", "</tbody></table>"],
             parse: function (structure) {
                 var itemcont = [];
-                var item = ['-td', itemcont];
+                var item = ["-td", itemcont];
                 var rowcont = [item];
-                var row = ['-tr', rowcont];
+                var row = ["-tr", rowcont];
                 var tablecont = [row];
-                var table = ['table', tablecont];
+                var table = ["table", tablecont];
                 structure.slice(1).forEach(function (rowrow) {
                     rowrow.forEach(function (thing) {
                         if (Array.isArray(thing)) {
                             switch (thing[0]) {
-                            case '@!':
-                                item[0] = '-th';
+                            case "@!":
+                                item[0] = "-th";
                                 break;
-                            case '@|':
+                            case "@|":
                                 itemcont = [];
-                                item = ['-td', itemcont];
+                                item = ["-td", itemcont];
                                 rowcont.push(item);
                                 break;
-                            case '@_':
+                            case "@_":
                                 itemcont = [];
-                                item = ['-td', itemcont];
+                                item = ["-td", itemcont];
                                 rowcont = [item];
-                                row = ['-tr', rowcont];
+                                row = ["-tr", rowcont];
                                 tablecont.push(row);
                                 break;
                             default:
@@ -230,18 +233,18 @@ function make_onehtml() {
                 });
                 return table;
             },
-            '@!': true,
-            '@_': true,
-            '@|': true
+            "@!": true,
+            "@_": true,
+            "@|": true
         },
-        '-td': {
-            link: '',
-            name: '',
+        "-td": {
+            link: "",
+            name: "",
             gen: ["<td>", "</td>"]
         },
-        '-th': {
-            link: '',
-            name: '',
+        "-th": {
+            link: "",
+            name: "",
             gen: ["<th>", "</th>"]
         },
         together: {
@@ -251,19 +254,19 @@ function make_onehtml() {
             parse: function (structure) {
                 var stuff = structure[1];
                 structure.slice(2).forEach(function (row) {
-                    stuff = stuff.concat(' ', row);
+                    stuff = stuff.concat(" ", row);
                 });
-                return ['together', stuff];
+                return ["together", stuff];
             }
         },
-        '-tr': {
-            link: '',
-            name: '',
+        "-tr": {
+            link: "",
+            name: "",
             gen: ["<tr>", "</tr>"]
         },
         url: {
             gen: function (text) {
-                return '<a href="' + text + '">' + text + '</a>';
+                return "<a href='" + text + "'>" + text + "</a>";
             }
         }
     };

@@ -137,13 +137,6 @@ li p {
 	text-indent: 0;
 }
 
-.es5 {  /* ES5 warning */
-    background-image: url(es5.gif);
-    background-repeat: no-repeat;
-    margin-left: -0.5in;
-    padding-left: 0.5in;
-}
-
 a {  /* link */
     font-family: Syntax, Helvetica, sans-serif;
     font-size: 100%;

@@ -40,24 +40,20 @@
     An array representing a deck of 52 cards can be shuffled with 51 random numbers.
 
     @begin(program)
-    function shuffle(deck) {
+function shuffle(deck) {
 
-    // Shuffle the contents of an array using the Fisher-Yates shuffle. Starting
-    // at the end of the deck, swap each card with a card randomly selected from
-    // the front part of the deck.
+// Shuffle the contents of an array using the Fisher-Yates shuffle. Starting
+// at the end of the deck, swap each card with a card randomly selected from
+// the front part of the deck. This is modifies the deck.
 
-        var card_nr = deck.length,
-            rand,    // The index of the randomly selected card
-            temp;    // Temporary storage for the swap.
-
-        while (card_nr > 1) {
-            rand = Math.floor(Math.random() * card_nr);
-            card_nr -= 1;
-            temp = deck[card_nr];
-            deck[card_nr] = deck[rand];
-            deck[rand] = temp;
-        }
-    }
+    deck.forEach(function (card, card_nr) {
+        let rand = Math.floor(
+            Math.random() * ((deck.length - card_nr) - 1)
+        ) + card_nr;
+        deck[card_nr] = deck[rand];
+        deck[rand] = card;
+    });
+}
     @end(program)
 
 
@@ -278,11 +274,10 @@
 
         @article "@t(Reflect) @link(Primordial function)"
 
-        @es5<Blah.>
+        <Blah.>
 
         @article (@t(Reflect) @link(function))
 
-        @es5<
             @list {
                 @link(apply Reflect function)
                 @link(construct Reflect function)
@@ -300,7 +295,6 @@
                 @link(set Reflect function)
                 @link(setPrototypeOf Reflect function)
             }
-        >
 
 @specimen "regexp"
 
@@ -386,7 +380,7 @@
 
     @article "@t(repeat) @link(string prototype function)"
 
-    @es5(Blah.)
+    (Blah.)
 
 @specimen "replace"
 
