@@ -1,18 +1,18 @@
 // include.js
-// 2016-01-13
+// 2017-08-31
 
 /*jslint node */
 
 
 function include(callback, text, get_inclusion) {
-    'use strict';
+    "use strict";
 
 // The include function replaces @include expressions with stuff. If there are
 // no @include expressions, then the original text is the result.
 
 // The include processor takes these parameters:
 
-//      callback(data, failure):
+//      callback(result, failure):
 //                  This function is given the result in this turn or a future
 //                  turn.
 
@@ -44,27 +44,27 @@ function include(callback, text, get_inclusion) {
 // If inclusions are coming from files, and if the environment is nodejs, then
 // get_inclusion could be defined like this:
 
-// var fs = require('fs');
+// var fs = require("fs");
 
 // function get_inclusion(callback, key, ignore) {
-//     fs.readFile(key, 'utf8', function (failure, data) {
+//     fs.readFile(key, "utf8", function (failure, data) {
 //         return callback(data, failure);
 //     });
 // }
 
-    var at_include = '@include';
-    var head = 0;   // head marks the beginning of the '@include' substring.
+    var at_include = "@include";
+    var head = 0;   // head marks the beginning of the "@include" substring.
                     // head is kept in the outer scope so indexOf does not
                     // need to ever rescan material that previously didn't
                     // match.
     var middle;     // middle will eventually mark the beginning of the key.
     var pair = {    // We allow the key to be wrapped by any of these pairs.
-        '"': '"',
-        '\'': '\'',
-        '<': '>',
-        '(': ')',
-        '[': ']',
-        '{': '}'
+        "\"": "\"",
+        "'": "'",
+        "<": ">",
+        "(": ")",
+        "[": "]",
+        "{": "}"
     };
 
     function back(data, failure) {
@@ -80,7 +80,7 @@ function include(callback, text, get_inclusion) {
     function error_message(message) {
         return back(
             undefined,
-            new Error(message + ' ' + middle + ": " + text)
+            new Error(message + " " + middle + ": " + text)
         );
     }
 
@@ -96,7 +96,7 @@ function include(callback, text, get_inclusion) {
         var open;   // an open quote
         var tail;   // tail will mark the remainder of the text.
 
-// Search for the next occurrence of '@include'. If it isn't found, then there
+// Search for the next occurrence of "@include". If it isn't found, then there
 // is no more work to do. Give the text to the callback. This is the successful
 // conclusion of include.
 
@@ -108,11 +108,11 @@ function include(callback, text, get_inclusion) {
             fore = head;
             count = 0;
 
-// If the '@include' was preceeded by an odd number of '@', then ignore it.
+// If the "@include" was preceeded by an odd number of "@", then ignore it.
 
             while (true) {
                 fore -= 1;
-                if (fore < 0 || text.charAt(fore) !== '@') {
+                if (fore < 0 || text.charAt(fore) !== "@") {
                     break;
                 }
                 count += 1;
@@ -124,10 +124,10 @@ function include(callback, text, get_inclusion) {
         }
 
 // The middle index points to the character position immediately after the
-// '@include'. If it is an optional space, skip over it.
+// "@include". If it is an optional space, skip over it.
 
         middle = head + at_include.length;
-        if (text.charAt(middle) === ' ') {
+        if (text.charAt(middle) === " ") {
             middle += 1;
         }
 
@@ -136,7 +136,7 @@ function include(callback, text, get_inclusion) {
 
         open = text.charAt(middle);
         close = pair[open];
-        if (typeof close !== 'string') {
+        if (typeof close !== "string") {
             return error_message("Missing quote at");
         }
 
