@@ -121,15 +121,16 @@
 
     The Math primordial object is the container for these numeric properties:
 
-    @list {
-    @link(E Math number)
-    @link(LN10 Math number)
-    @link(LN2 Math number)
-    @link(LOG10E Math number)
-    @link(LOG2E Math number)
-    @link(PI Math number)
-    @link(SQRT1_2 Math number)
-    @link(SQRT2 Math number)
+    @table {
+    @!property@|@!description@|@!numeric value
+    @_@link(E)@|approximate value of e(Eulers number)@|2.718281828459045
+    @_@link(LN10)@|natural logarithm of 10@|2.302585092994046
+    @_@link(LN2)@|natural logarithm of 2@|0.6931471805599453
+    @_@link(LOG10E)@|base 10 logarithm of e@|0.4342944819032518
+    @_@link(LOG2E)@|base 2 logarithm of e@|1.4426950408889634
+    @_@link(PI)@|approximate value of π(pi) @|3.141592653589793
+    @_@link(SQRT1_2)@|Square root of 1/2(.5)@|0.7071067811865476
+    @_@link(SQRT2)@|Square root of 2@|1.4142135623730951
     }
 
 @specimen "max"
