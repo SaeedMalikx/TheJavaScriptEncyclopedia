@@ -53,7 +53,7 @@
 
     Blah.
 
-@specimen "pi"
+@specimen "PI"
 
     @article(@t(PI) @link(Math number) @aka(pi))
 
