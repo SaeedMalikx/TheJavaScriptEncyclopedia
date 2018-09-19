@@ -233,7 +233,20 @@ function bitwise_and(left, right) {
 
 @article(@t(&&) @link(infix operator) @aka(and))
 
-Blah.
+The @t(&&) infix operator performs a logical AND operation between two operands, 
+evaluated as a @link(boolean). The @t(&&) operator produces @link(true)if both operands are @link(truthy), 
+and @link(false) if either operand is @link(falsy). If the first operand is @link(falsy), the second operand is skipped and the @t(&&) operator evaluates to @link(false).  
+
+Examples:
+
+@begin(program)
+true  &&  true           // true
+true  &&  false          // false
+false &&  true           // false
+false &&  false          // false
+true  &&  'hello'        // "hello"
+   1  &&  3              // 3
+@end(program)
 
 @article(@t(&=) @link(assignment infix operator) @aka(bitwise and))
 
