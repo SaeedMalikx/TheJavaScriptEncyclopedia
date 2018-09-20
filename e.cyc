@@ -153,9 +153,27 @@
 
 @specimen "ES2015 @aka(ES6)"
 
-    Blah. See @link(ES6)
+    ECMAScript Programming Language Standard, Sixth Edition [2015].
 
-    ECMAScript Programming Language Standard, Third Edition [1999].
+@specimen "ES2016 @aka(ES7)"
+
+    ECMAScript Programming Language Standard, Seventh Edition [2016].
+
+@specimen "ES2017 @aka(ES8)"
+
+    ECMAScript Programming Language Standard, Eighth Edition [2017].
+
+@specimen "ES2018 @aka(ES9)"
+
+    ECMAScript Programming Language Standard, Ninth Edition [2018].
+
+@specimen "ES1"
+
+    ECMAScript Programming Language Standard, First Edition [1997].
+
+@specimen "ES2" 
+
+    ECMAScript Programming Language Standard, Second Edition [1998].
 
 @specimen "ES3"
 
@@ -163,15 +181,15 @@
 
 @specimen "ES4"
 
-    There is no @link(es4).
+    There is no @link(es4). The specification was abandoned. 
 
 @specimen "ES5"
 
     ECMAScript Programming Language Standard, Fifth Edition [2009].
 
-@specimen "ES6"
+@specimen "ES6 @aka(ECMAScript 2015)"
 
-    ECMAScript Programming Language Standard, Sixth Edition [2015].
+    An earlier and common name for ECMAScript Programming Language Standard, Sixth Edition [2015]. To avoid confusion and to have yearly releases it was officially renamed to @link(ES2015).
 
 @specimen "escapement"
 

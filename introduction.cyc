@@ -1,12 +1,23 @@
 @chapter "Introduction"
 
-@specimen "History"
-
-@specimen "Format"
-
 The language described in this book is @link "es6".
 The standard, which is designated as ECMA-262, may be found at
-@url<http://www.ecma-international.org/publications/standards/ECMA-262.htm>.
+@url<https://www.ecma-international.org/publications/standards/Ecma-262.htm>.
+
+Version history:
+
+@table {
+@!version@|@!release
+@_@link(ES1)@|1997
+@_@link(ES2)@|1998
+@_@link(ES3)@|1999
+@_@link(ES4)@|N/A
+@_@link(ES5)@|2009
+@_@link(ES6)@|2015
+@_@link(ES2016)@|2016
+@_@link(ES2017)@|2017
+@_@link(ES2018)@|2018
+}
 
 Because of trademark problems, the standard for the @link(JavaScript) language
 is called @link(ECMAScript). JavaScript is a trademark of Oracle Corporation.
