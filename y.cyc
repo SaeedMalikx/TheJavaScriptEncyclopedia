@@ -1,11 +1,5 @@
 @chapter "Y"
 
-@specimen "y"
-
-    @article "@t(y) @link 'regexp flag'"
-
-    (Blah.)
-
 @specimen "y combinator"
 
     Blah.

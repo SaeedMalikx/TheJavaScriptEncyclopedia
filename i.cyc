@@ -1,9 +1,5 @@
 @chapter "I"
 
-@specimen(i)
-
-    @article(@t(i) @link(regexp flag))
-
 @specimen "identifier"
 
     See @link(name).

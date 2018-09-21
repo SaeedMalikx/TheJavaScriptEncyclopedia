@@ -1,9 +1,5 @@
 @chapter "X"
 
-@specimen "x"
-
-    Blah. See @link 'hexadecimal'.
-
 @specimen "XML"
 
     XML @aka 'Extensible Markup Language' is a document format based on SGML.

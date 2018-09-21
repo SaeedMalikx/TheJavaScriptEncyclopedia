@@ -548,6 +548,10 @@ Blah.
 
 See @link(|| infix operator) and @link(| infix operator).
 
+@specimen "Oracle Corporation"
+
+See @link(Eye of Sauron)
+
 @specimen "own property"
 
 An own property is a property of an object that is not inherited from another object. Properties that are directly assigned to an object are always own properties. The hasOwnProperty Object prototype function can be used to determine if an object has an own property with a given key.

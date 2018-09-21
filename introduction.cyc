@@ -7,7 +7,7 @@ The standard, which is designated as ECMA-262, may be found at
 Version history:
 
 @table {
-@!version@|@!release
+@!version@|@!released
 @_@link(ES1)@|1997
 @_@link(ES2)@|1998
 @_@link(ES3)@|1999
@@ -20,7 +20,7 @@ Version history:
 }
 
 Because of trademark problems, the standard for the @link(JavaScript) language
-is called @link(ECMAScript). JavaScript is a trademark of Oracle Corporation.
+is called @link(ECMAScript). JavaScript is a trademark of @link(Oracle Corporation).
 
 @program <"use strict";>
 
@@ -30,6 +30,10 @@ specimens, where a specimen is an element of syntax or a concept. The specimens
 are ordered alphabetically. A specimen marked with @reserved@ indicates that
 the word is reserved and cannot be used as a parameter or variable name.
 The special characters chapter is sorted according to the @link(ASCII) sequence.
+
+@table{
+@!@link(Special Characters)@|@!@link(A)@|@!@link(B)@|@!@link(C)@|@!@link(D)@|@!@link(E)@|@!@link(F)@|@!@link(G)@|@!@link(H)@|@!@link(I)@|@!@link(J)@|@!@link(K)@|@!@link(L)@|@!@link(M)@|@!@link(N)@|@!@link(O)@|@!@link(P)@|@!@link(Q)@|@!@link(R)@|@!@link(S)@|@!@link(T)@|@!@link(U)@|@!@link(V)@|@!@link(W)@|@!@link(X)@|@!@link(Y)@|@!@link(Z)
+}
 
 Under each specimen there will be one or more articles that explain, expand,
 or are related to the specimen. An article may be composed of one or more sections.

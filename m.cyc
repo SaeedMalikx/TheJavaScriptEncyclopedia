@@ -1,8 +1,5 @@
 @chapter "M"
 
-@specimen "m"
-
-    @article "@t(m) @link(regexp flag)"
 
 @specimen "map"
 
@@ -128,7 +125,7 @@
     @_@link(LN2)@|natural logarithm of 2@|0.6931471805599453
     @_@link(LOG10E)@|base 10 logarithm of e@|0.4342944819032518
     @_@link(LOG2E)@|base 2 logarithm of e@|1.4426950408889634
-    @_@link(PI)@|approximate value of π(pi) @|3.141592653589793
+    @_@link(PI)@|approximate value of π @|3.141592653589793
     @_@link(SQRT1_2)@|Square root of 1/2(.5)@|0.7071067811865476
     @_@link(SQRT2)@|Square root of 2@|1.4142135623730951
     }
