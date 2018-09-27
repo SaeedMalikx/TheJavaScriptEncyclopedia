@@ -8,23 +8,23 @@
 
 @specimen "valueOf"
 
-    @article (@t 'valueOf' @link(Boolean prototype function))
+    @article (@t(valueOf) @link(Boolean prototype function))
 
     Blah.
 
-    @article (@t 'valueOf' @link(Date prototype function))
+    @article (@t(valueOf) @link(Date prototype function))
 
     Blah.
 
-    @article (@t 'valueOf' @link(Number prototype function))
+    @article (@t(valueOf) @link(Number prototype function))
 
     Blah.
 
-    @article (@t 'valueOf' @link(Object prototype function))
+    @article (@t(valueOf) @link(Object prototype function))
 
     Blah.
 
-    @article (@t 'valueOf' @link(String prototype function))
+    @article (@t(valueOf) @link(String prototype function))
 
     Blah.
 

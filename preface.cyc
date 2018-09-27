@@ -1,4 +1,12 @@
-@chapter "Preface"
+@book "The JavaScript Encyclopedia"
+
+This is a work in progress. The goal of this project is to produce a complete 
+encyclopedia for the current language and any future versions that might appear. 
+The encyclopedia will be developed in @link(Cyc), a simple language that was inspired 
+by Brian Reid's Scribe. Cyc is described in the preface.The source of 
+this book can be found at
+
+@url<https://github.com/douglascrockford/TheJavaScriptEncyclopedia>.
 
 In 2009, as we were wrapping up @link(ES5), I was thinking about how to
 organize the material. I designed a hypertext encyclopedia format specifically

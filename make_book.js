@@ -1,54 +1,29 @@
-// make_book.js
-// 2016-01-27
-
-// Make a book as a single HTML file.
-
-//      node make_book
-
-"use strict";
-
-var RQ = require("./rq.js");
+var fs = require('fs');
 var cyc = require("./cyc.js");
 var onehtml = require("./onehtml.js");
-var include = require("./include.js");
-var fs = require("fs");
 
-var filename = process.argv[2] || "book";
-if (filename.slice(-4) === ".cyc") {
-    filename = filename.slice(0, -4);
-}
-
-function get_inclusion(callback, key, ignore) {
-    fs.readFile(key, "utf8", function (failure, data) {
-        return callback(data, failure);
-    });
-}
-
-RQ.sequence([
-    function (callback) {
-        fs.readFile("./" + filename + ".cyc", function (error, data) {
-            if (error) {
-                console.log(error);
-                return callback(undefined, error);
-            }
-            return callback(data.toString());
-        });
-    },
-    function (callback, value) {
-        return include(callback, value, get_inclusion);
-    },
-    function (callback, value) {
-        return callback(cyc(value, onehtml));
-    },
-    function (callback, value) {
-        fs.writeFile("./" + filename + ".html", value, function (error) {
-            if (error) {
-                console.log(error);
-                return callback(undefined, error);
-            }
-            return callback(true);
-        });
+var stringArray = []
+    
+fs.readFile("./book.cyc", 'utf8', (err, data) => {  
+    if (err) throw err;
+    let dataString = data.toString()
+    let dataIncludeNum = dataString.search("@include") 
+    let dataNew = dataString.slice(dataIncludeNum, -1)
+    let dataList = dataNew.replace(/['"]+/g, '').replace(/@include+/g, '').replace(/\n+/g, '').replace(/\r+/g, '')
+    let dataSplit = dataList.trim().split(" ")
+    console.log(dataSplit)
+    console.log(dataSplit.length + " .cyc files found")
+    for(i=0; i < dataSplit.length; i +=1 ){
+        //Use default readfile for Async > assign numbers to letters > store > shuffle in ascending 
+        const stringData = fs.readFileSync("./" + dataSplit[i], 'utf8');
+        stringArray.push(stringData)
     }
-])(console.log);
-
+    console.log(stringArray.length + " .cyc Files Stringified")
+    stringCombined = stringArray.join()
+    let stringCyc = stringCombined.replace(/,@+/g, " @")
+    //HTML Single File Processor
+    let stringHTML = cyc(stringCyc, onehtml)
+    fs.writeFileSync('book.html', stringHTML, 'utf8');
+    //Add Cyc Processors Here
+}) 
 

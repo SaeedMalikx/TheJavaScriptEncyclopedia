@@ -399,7 +399,7 @@
     @_@!7@|p   @|q  @|r  @|s  @|  t@|u  @|v  @|w  @|x  @|y  @|z  @|{  @||  @|}  @|~  @|del
     @end(table)
 
-@specimen "asi @aka 'automatic semicolon insertion'"
+@specimen "asi @aka(automatic semicolon insertion)"
 
     See @link(automatic semicolon insertion).
 
