@@ -269,11 +269,27 @@
     An operator that takes one operand. See @link(prefix operator) and @link(suffix operator).
 
 @specimen "undefined"
-    @@Blah.
-
-    @article "@t(undefined) @link <literal>"
     Blah.
 
+    @article "@t(undefined) @link <literal>"
+    A @link(primordial variable) with a single value of @b(Undefined). Any uninitialized variables, non existing objects or arrays not assigned a value are considered @b(Undefined). Upon calling the unassigned variables,arrays,objects @b(Undefined) is returned.
+
+    @begin(program)
+
+    let a 
+    a                                   //Undefined
+
+    let person = {name: 'John'}
+    person.height                       //Undefined
+
+    let years = ['2010', '2011','2012']
+    person[4]                           //Undefined
+
+    @end(program)
+
+    Blah: (talk about undefined if no return present in a function, void)
+
+    See @link(Null)
 @specimen "Unicode"
     Blah.
 

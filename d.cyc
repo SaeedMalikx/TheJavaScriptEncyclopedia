@@ -18,7 +18,7 @@
     @link (DataView prototype arraybuffer)
     @link (DataView prototype function)
     @link (DataView prototype number)
-    }>
+    }
 
 
     @article "@link(DataView prototype) @link(arraybuffer)"

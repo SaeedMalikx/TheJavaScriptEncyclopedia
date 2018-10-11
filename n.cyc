@@ -244,7 +244,7 @@
 
     A number value acts as an immutable object. A number value has methods that it inherits from Number.protoype (see Number prototype function).
 
-    Using the typeof prefix operator with a number value always produces the string 'number', even when the number is one of the non finite values @link(NaN), Infinity, and -Infinity.
+    Using the @link(typeof) prefix operator with a number value always produces the string 'number', even when the number is one of the non finite values @link(NaN), Infinity, and -Infinity.
 
     @article(@t(Number) @link(primordial function))
 

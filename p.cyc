@@ -649,7 +649,7 @@ var score_poker_hand = (function () {
                 @link(race promise function)
                 @link(reject promise function)
                 @link(resolve promise function)
-            }
+                }
 
         @article (@t(Promise) @link(prototype) @link(function))
 
@@ -727,9 +727,9 @@ var score_poker_hand = (function () {
 
         @article "@t(Proxy) @link(primoridal object)"
 
-         <Blah.
+         Blah.
 
-        >
+        
 
         @article (@t(Proxy) @link(function))
 

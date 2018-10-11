@@ -85,7 +85,7 @@
 @specimen "entity"
 
     An entity in HTML is a character sequence that represents a single character.
-    It is HTML's alternative to escapement as used in a string literal.
+    It is HTML's alternative to @link(escapement) as used in a string literal.
     An entity begins with @link(&) and ends with @link(;),
     and between them there may be a cryptic word or a number.
     JavaScript tolerates HTML entities in strings, but has no knowledge of them.

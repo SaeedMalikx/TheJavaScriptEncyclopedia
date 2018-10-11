@@ -461,7 +461,7 @@
     ('c' + 'a' + 't').length    // 3
     }
 
-    A string value inherits from @link(String prototype). This provides methods such as @link(charAt String prototype function) that can fetch a single character from a string, or slice String prototype function that can fetch a substring from a string. See String prototype function.
+    A string value inherits from @link(String prototype). This provides methods such as @link(charAt String prototype function) that can fetch a single character from a string, or slice String prototype function that can fetch a substring from a string. See @link(String prototype function).
 
     A string can contain any kind of textual material, including programs.
 

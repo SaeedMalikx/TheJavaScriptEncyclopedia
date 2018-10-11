@@ -155,23 +155,35 @@ Object.defineProperty(elder, 'meter', {
 @end(program)
 
 An array containing the keys of all of an object's own enumerable properties can be obtained with the keys Object function. All of an object's enumerable properties can be obtained with the for in statement.
-Property descriptor
+
+@b(Property descriptor)
 
 A property descriptor is an object that describes a property and its attributes. A property descriptor object can be passed to the defineProperty Object function and the defineProperties Object function. A property descriptor object can be obtained from the getOwnPropertyDescriptor Object function.
 
 These are all of the properties that may be present in a property descriptor:
 
-value
+@i "value"
+
     The value of the property. This attribute is only used in data properties.
-writeable
+
+@i "writeable"
+
     If true, the value may be changed. If false, attempting to change the value throws an exception (ES5 strict) or fails silently (ES3). This attribute is only used in data properties. Once it is set to false, it can no longer be set to true.
-enumerable
+
+@i "enumerable"
+
     If true, the key string will appear in the sequence produced by the for in statement. Once it is set to false, it can no longer be set to true.
-configurable
+
+@i "configurable"
+
     If true, the data property may be changed into an accessor property or the accessor property may be changed into a data property or the accessor property may have its get and set methods replaced or the property may be deleted with the delete prefix operator. Once it is set to false, it can no longer be set to true.
-get
+
+@i "get"
+
     If the get attribute is a function, the function is called when an attempt is made to get the value. The return value from the function is used instead. The function will receive no parameters, but this will be bound to the object. This attribute is only used in assessor properties.
-set
+
+@i "set"
+
     If the set attribute is a function, the function is called when an attempt is made to set the value of the property. The function will receive one parameter, the value that is intended to be stored in the property, and this will be bound to the object. The return value is ignored. This attribute is only used in assessor properties.
 
 A data property is a property that has neither a set attribute nor a get attribute. An accessor property is a property having either a get attribute, a set attribute, or both. An accessor property can be used to attach behavior to the retrieving or changing of a value.
