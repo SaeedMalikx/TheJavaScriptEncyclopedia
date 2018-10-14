@@ -61,7 +61,7 @@
     }
     @end(program)
 
-    This is an approximate implemention of @t(Math.acos):
+    This is an approximate implementation of @t(Math.acos):
 
     @begin(program)
     Math.acos = function acos(x) {
@@ -227,7 +227,7 @@
     @article(@t(Array) @link(primordial function))
 
     The @t(Array) primordial function is the constructor of arrays.
-    The @link([ ] array literal) form is perfered. Blah.
+    The @link([ ] array literal) form is preferred. Blah.
 
     The @t(Array) function contains these methods in @t(Array.prototype):
 
@@ -411,7 +411,7 @@
     arc sine and sin-1. Its argument x should be a number in the range -1...1.
     The result will be an angle in radians in the range (Math.PI / -2)...(Math.PI / 2).
 
-    This is an approximate implemention of Math.asin:
+    This is an approximate implementation of Math.asin:
 
     @begin(program)
     Math.asin = function asin(x) {
@@ -541,9 +541,9 @@
     The Math.atan(x) function is the inverse tangent function, also known as arc tangent and tan@super(-1). Its argument x should be a number. The result will be an angle in radians in the range (Math.PI / -2)...(Math.PI / 2).
 
     The Math.atan(x) function converts the ratio of two sides of a right triangle
-    into the angle of the hypotenuse. This is useful when converting cartesian
+    into the angle of the hypotenuse. This is useful when converting Cartesian
     coordinates to polar coordinates. But there are two problems to watch out for.
-    If one of the cartesian coordinates is zero, then the computation of the ratio
+    If one of the Cartesian coordinates is zero, then the computation of the ratio
     could result in a division by zero, which is something to be avoided.
 
     The other problem is the selection of the quadrant. The two components of the
@@ -579,7 +579,7 @@
 
     In cases like this, it is better to use the @link(atan2 Math function) because it does the corrections and avoids division by zero.
 
-    This is an approximate implemention of Math.atan:
+    This is an approximate implementation of Math.atan:
 
     @begin(program)
     Math.atan = function atan(x) {

@@ -63,7 +63,7 @@ alert(has_a(word, '1'));              // true
 word.cat = true;
 alert(has_a(word, 'cat'));            // true
 alert(has_a(word, 'dog'));            // false
-alert(has_a(word, 'constructor'));    // true (inherted)
+alert(has_a(word, 'constructor'));    // true (inherited)
 >
 
 It is regrettably necessary to program defensively in the face of this by

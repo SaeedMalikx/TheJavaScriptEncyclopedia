@@ -262,7 +262,7 @@
 
 @specimen "constructor"
 
-    Generally, a constructer is any function that returns an object. But constructors
+    Generally, a constructor is any function that returns an object. But constructors
     is usually means a function that returns an object using @link(prototypal inheritance) using the @link(new prefix operator).
 
     @article "constructor @link(invocation)"
@@ -351,7 +351,7 @@
     }
     @end(program)
 
-    This is an approximate implemention of Math.cos:
+    This is an approximate implementation of Math.cos:
 
     @begin(program)
     Math.cos = (function () {

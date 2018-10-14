@@ -32,7 +32,7 @@
     The ECMAScript for XML (E4X) Specification [ECMA-357 Second Edition /
     December 2005 is a standard that extends ECMAScript with XML literals and
     XPath-like operators. It is not a part of ES3 or ES5. It is not implemented
-    in most systems. The E4X extentions should be avoided because of their lack
+    in most systems. The E4X extensions should be avoided because of their lack
     of general availability and acceptance.
 
 @specimen "Ecma International"
@@ -112,7 +112,7 @@
 
     An enumeration object is an object that is used to map names or mnemonics to
     codes in the form of numbers or other values. Programs often make use of codes
-    or constant values, but it is generally bad to scatter them thoughout a program
+    or constant values, but it is generally bad to scatter them throughout a program
     because that can make the program difficult to read and modify. So instead we
     can collect the codes and constants into an object, giving descriptive keys to
     each one. The descriptive keys help make the program self documenting, and

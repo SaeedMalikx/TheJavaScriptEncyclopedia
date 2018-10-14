@@ -44,14 +44,14 @@
         @article "@t(set) @link(prototype function)"
 
             @list {
-                @link(add set prototoype function)
-                @link(clear set prototoype function)
-                @link(delete set prototoype function)
-                @link(entries set prototoype function)
-                @link(forEach set prototoype function)
-                @link(has set prototoype function)
-                @link(keys set prototoype function)
-                @link(values set prototoype function)
+                @link(add set prototype function)
+                @link(clear set prototype function)
+                @link(delete set prototype function)
+                @link(entries set prototype function)
+                @link(forEach set prototype function)
+                @link(has set prototype function)
+                @link(keys set prototype function)
+                @link(values set prototype function)
             }
 
     @specimen "setDate"
@@ -233,7 +233,7 @@
     }
     @end(program)
 
-    This is an approximate implemention of Math.sin:
+    This is an approximate implementation of Math.sin:
 
     @begin(program)
     Math.sin = (function () {

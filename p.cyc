@@ -214,7 +214,7 @@ var score_poker_hand = (function () {
     function straight(count) {
 
 // Given a rank count, determine if it has a straight. Using the rank_value
-// enumeraton object, starting with Ace and work down, look for 5 cards in a
+// enumeration object, starting with Ace and work down, look for 5 cards in a
 // row. If they are found, return the value of the high card. The lowest
 // straight has 6 high.
 

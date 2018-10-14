@@ -390,4 +390,4 @@
     @link(variable)
     }
 
-    An lvalue must be mutible.
+    An lvalue must be mutable.

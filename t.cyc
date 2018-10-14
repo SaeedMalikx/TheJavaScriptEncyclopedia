@@ -12,7 +12,7 @@
 
     The Math.tan(radians) function, also known as tangent, takes an angle in radians and returns a number.
 
-    This is an approximate implemention of Math.tan:
+    This is an approximate implementation of Math.tan:
 
     @program <
     Math.tan = function tan(radians) {

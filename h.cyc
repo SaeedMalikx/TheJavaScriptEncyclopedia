@@ -15,7 +15,7 @@
 
     Unlike the decimal system which uses base 10, the hexadecimal system uses 
     base 16, where each hexadecimal digit represents exactly 4 bits. In olden times, 
-    programming was closer to the machine so a format that was trivially convertable 
+    programming was closer to the machine so a format that was trivially convertible 
     to binary was highly desirable. Today, hexadecimal is mainly used to encode a 
     code value in a @link[Unicode escape sequence] and to encode colors in @link(CSS).
 

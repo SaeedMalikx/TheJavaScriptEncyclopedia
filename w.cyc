@@ -19,10 +19,10 @@
     @article "@t(WeakMap) @link(prototype function)"
 
         @list {
-            @link(delete WeakMap prototoype function)
-            @link(get WeakMap prototoype function)
-            @link(has WeakMap prototoype function)
-            @link(set WeakMap prototoype function)
+            @link(delete WeakMap prototype function)
+            @link(get WeakMap prototype function)
+            @link(has WeakMap prototype function)
+            @link(set WeakMap prototype function)
         }
 
 @specimen "WeakSet"
@@ -38,10 +38,10 @@
     @article "@t(WeakSet) @link(prototype function)"
 
         @list {
-            @link(add WeakSet prototoype function)
-            @link(delete WeakSet prototoype function)
-            @link(get WeakSet prototoype function)
-            @link(has WeakSet prototoype function)
+            @link(add WeakSet prototype function)
+            @link(delete WeakSet prototype function)
+            @link(get WeakSet prototype function)
+            @link(has WeakSet prototype function)
         }
 
 @specimen "while @reserved@"

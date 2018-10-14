@@ -288,6 +288,6 @@
 
     See @link(* infix operator).
 
-@specimen "mutabile"
+@specimen "mutable"
 
     Blah.
