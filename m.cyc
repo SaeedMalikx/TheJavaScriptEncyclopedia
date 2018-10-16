@@ -66,22 +66,34 @@
     @list {
     @link(abs Math function)
     @link(acos Math function)
+	@link(acosh Math function)
     @link(asin Math function)
+	@link(asinh Math function)
     @link(atan Math function)
+	@link(atanh Math function)
     @link(atan2 Math function)
     @link(ceil Math function)
     @link(cos Math function)
     @link(exp Math function)
     @link(floor Math function)
+	@link(fround Math function)
+	@link(hypot Math function)
+	@link(imul Math function)
     @link(log Math function)
+	@link(log1p Math function)
+	@link(log10 Math function)
+	@link(log2 Math function)
     @link(max Math function)
     @link(min Math function)
     @link(pow Math function)
     @link(random Math function)
     @link(round Math function)
+	@link(sign Math function)
     @link(sin Math function)
     @link(sqrt Math function)
     @link(tan Math function)
+	@link(tanh Math function)
+	@link(trunc Math function)
     }
 
     Most of the functions can take one parameter.
@@ -91,10 +103,15 @@
     @!function@|@!NaN@|@!-0@|@!0@|@!-Infinity@|@!Infinity
     @_abs@|NaN@|0@|0@|Infinity@|Infinity
     @_acos@|NaN@|Math.PI / 2@|Math.PI / 2@|NaN@|NaN
+	@_acosh@|NaN@|NaN@|NaN@|Infinity@|NaN
     @_asin@|NaN@|-0@|0@|NaN@|NaN
+	@_sinh@|NaN@|-0@|0@|Infinity@|-Infinity
     @_atan@|NaN@|-0@|0@|-Math.PI / 2@|Math.PI / 2
-    @_ceil@|NaN@|-0@|0@|-Infinity@|Infinity
+    @_atanh@|NaN@|-0@|0@|NaN@|NaN
+	@_cbrt@|NaN@|-0@|0@|-Infinity@|Infinity
+	@_ceil@|NaN@|-0@|0@|-Infinity@|Infinity
     @_cos@|NaN@|1@|1@|NaN@|NaN
+	@_cosh@|NaN@|1@|1@|Infinity@|Infinity
     @_exp@|NaN@|1@|1@|0@|Infinity
     @_floor@|NaN@|-0@|0@|-Infinity@|Infinity
     @_log@|NaN@|-Infinity@|-Infinity@|NaN@|Infinity
